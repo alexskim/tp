@@ -1,14 +1,117 @@
 <html>
 <head>
-	<title>百度一下</title>
+	<title>一个令人迷惑的页面</title>
+	<style>
+	*{
+		margin:0px;
+		padding:0;
+		list-style: none;
+	}
+	.content{
+		width:800px;
+		margin:20px auto;
+		overflow: hidden;
+	}
+	.essentialInformation .skill .educationalBackground .projectExperience .zwpj {
+		overflow: hidden;
+	}
+	.head {
+		text-align: center;
+		width: 100%;
+		height: 80px;
+		background: #778899;
+		float: left;
+		line-height:80px;
+	}
+	.biaoti {
+		width: 160px;
+		font-size: 20px;
+		font-weight: 500;
+		color: #000;
+		background: #C0C0C0;
+		float: left;
+		height: 100px;
+		line-height:100px;
+		margin-top: 4px;
+		text-align: center;
+	}
+	.neirong {
+		width: 639px;
+		background:white;
+		height: 98px;
+		float: right;
+		margin-top: 4px;
+		border-top: 1px solid #C0C0C0;
+		border-bottom: 1px solid #C0C0C0;
+		border-right: 1px solid #C0C0C0;
+	}
+	.neirong p {
+		vertical-align: middle;
+	}
+	</style>
 </head>
 <body>
-	<div align="center">
+	<div align="center" id="search">
 		<img src="baidu.png" width="270" height="129">
 		<form action="https://www.baidu.com/s">
-		<input type="text" name="wd" maxlength="100" autocomplete="off">
-		<input type="submit" value="百度一下">
+			<input type="text" name="wd" maxlength="100" autocomplete="off">
+			<input type="submit" value="百度">
 		</form>
 	</div>
+	<div class="content">
+		<div class="head">
+			<h1>个人简介</h1>
+		</div>
+
+		<div class="essentialInformation">
+			<div class="biaoti">
+				<p>基本信息</p>
+			</div>
+			<div class="neirong">
+				<span><strong>姓名：</strong>你猜</span><br>
+				<span><strong>性别：</strong>♂</span><br>
+				<span><strong>电话：</strong>00000000000</span><br>
+				<span><strong>邮箱：</strong>♂@qq.com</span>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="biaoti">
+				<p>专业技能</p>
+			</div>
+			<div class="neirong">
+				<p>啥都不会</p>
+			</div>
+
+		</div>
+		<div class="educationalBackground">
+			<div class="biaoti">
+				<p>教育背景</p>
+			</div>
+			<div class="neirong">
+				<p>没读过书</p>
+			</div>
+
+		</div>
+		<div class="projectExperience">
+			<div class="biaoti">
+				<p>项目经验</p>
+			</div>
+			<div class="neirong">
+				<ul>全是划水</ul>
+			</div>
+		</div>
+		<div class="zwpj">
+			<div class="biaoti">
+				<p>自我评价</p>
+			</div>
+			<div class="neirong">
+				<p>水的一批</p>
+			</div>
+		</div>
+	</div>
 </body>
+<script>
+	document.body.removeChild(document.getElementById("search1"));
+</script>
 </html>
